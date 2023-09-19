@@ -1,5 +1,27 @@
 <div>
   <h2>Task Tracker</h2>
-  <h4>Version: 1.0.0</h4>
+  <br /><br />
+  <p><b>Built-inn pipe: </b>{{ birthday | date : "fullDate" | uppercase }}</p>
+  <br /><br />
+  <p><b>Custom Pipe</b></p>
+
+  <div>
+    <p [ngStyle]="{'color':'yellow'}">Before Pipe</p>
+    <div *ngFor="let file of files">
+      <p>{{ file.name }}</p>
+      <p>{{ file.size }}</p>
+    </div>
+  </div>
+
+
+  <div>
+    <p [ngStyle]="{'color':'red'}">After Pipe</p>
+    <div *ngFor="let file of mapped">
+      <p>After Pipe</p>
+      <p>{{ file.name }}</p>
+      <p>{{ file.size }}</p>
+    </div>
+  </div>
+
   <a routerLink="/">Go Back</a>
 </div>

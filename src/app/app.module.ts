@@ -13,6 +13,7 @@ import { AddTaskComponent } from './components/add-task/add-task.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
+import { CustomFileSizePipePipe } from './pipes/custom-file-size-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -23,8 +24,7 @@ import { AboutComponent } from './components/about/about.component';
     TaskItemComponent,
     AddTaskComponent,
     FooterComponent,
-    AboutComponent
-  ],
+    AboutComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -32,7 +32,7 @@ import { AboutComponent } from './components/about/about.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [CustomFileSizePipePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
