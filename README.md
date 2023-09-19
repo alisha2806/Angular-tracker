@@ -1,7 +1,7 @@
 # AngularTracker
 
 
-An angular app using routing and a fake backend API JSON SERVER.
+An angular app using routing and a fake backend API JSON SERVER.Also pipes usage.
 FYI:npm install json-server
 
 To run backend:
