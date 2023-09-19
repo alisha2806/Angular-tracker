@@ -1,5 +1,11 @@
 # AngularTracker
 
+
+An angular app using routing and a fake backend API JSON SERVER.
+FYI:npm install json-server
+
+To run backend:
+npm run server
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
 
 ## Development server
