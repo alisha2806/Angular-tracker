@@ -14,6 +14,9 @@ import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
 import { CustomFileSizePipePipe } from './pipes/custom-file-size-pipe.pipe';
+import { HoverDirective } from './CustomDirective/hover.directive';
+import { BetterhighlightDirective } from './CustomDirective/betterhighlight.directive';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,13 +27,16 @@ import { CustomFileSizePipePipe } from './pipes/custom-file-size-pipe.pipe';
     TaskItemComponent,
     AddTaskComponent,
     FooterComponent,
-    AboutComponent  ],
+    AboutComponent,
+    HoverDirective,
+    BetterhighlightDirective  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [CustomFileSizePipePipe],
   bootstrap: [AppComponent]

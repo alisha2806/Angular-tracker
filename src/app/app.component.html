@@ -2,5 +2,37 @@
     <app-header></app-header>
     <router-outlet></router-outlet>
     <app-footer></app-footer>
+    <!-- hostlistening example -->
+    <div appHover>1 To understand hostlistening and host binding</div>
+        <!-- hostbinding example -->
+    <div  appBetterhighlight>2 To understand hostlistening and host binding</div>
+
+
   </div>
+
+
+  <!-- two-way data binding -->
+  <div>
+    <input [(ngModel)]="abc" #xyz type="text">
+    {{abc}}
+  </div>
+
+  <!-- Reactive form example -->
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" >
+    <p>
+      <label for="firstname">First Name </label>
+      <input type="text" id="firstname" name="firstname" formControlName="firstname">
+    </p>
+
+
+    <p>
+      <label for="lastname">Last Name </label>
+      <input type="text" id="lastname" name="lastname" formControlName="lastname">
+    </p>
+
+
+    <p>
+      <button type="submit" [disabled]="!contactForm.valid">Submit</button>
+    </p>
+  </form>
 
